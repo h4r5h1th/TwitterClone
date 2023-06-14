@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.feed{
+    flex: 0.4;
+    border-right: 1px solid var(--twitter-background);
+    min-width: 65%;
+    overflow-y: scroll;
+}
+
+.feed::-webkit-scrollbar{
+    display: none;
+}
+
+.feed{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.feed__header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid var(--twitter-background);
+    padding: 15px 20px;
+}
+
+
+@media only screen and (max-width: 1024px)  {
+    .feed{
+        min-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 424px)  {
+    .feed{
+        min-width: 90%;
+    }
+}
